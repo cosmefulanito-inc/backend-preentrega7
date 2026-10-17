@@ -1,0 +1,13 @@
+<h1>Reservas</h1>
+
+{{#each bookings}}
+  <article>
+    <h2>{{clientName}}</h2>
+    <p>Email: {{clientEmail}}</p>
+    <p>Fecha: {{date}}</p>
+    <p>Hora: {{time}}</p>
+    <p>Estado: {{status}}</p>
+  </article>
+{{else}}
+  <p>No hay reservas cargadas</p>
+{{/each}}

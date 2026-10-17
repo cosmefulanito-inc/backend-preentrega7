@@ -1,0 +1,23 @@
+<h1>Servicios</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th><th>Descripción</th><th>Duración</th>
+      <th>Precio</th><th>Categoría</th><th>Disponibilidad</th>
+    </tr>
+  </thead>
+  <tbody id="services-list">
+    {{#each services}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{duration}} min</td>
+        <td>${{price}}</td>
+        <td>{{category}}</td>
+        <td>{{#if available}}Disponible{{else}}No disponible{{/if}}</td>
+      </tr>
+    {{else}}
+      <tr id="empty-row"><td colspan="6">No hay servicios cargados</td></tr>
+    {{/each}}
+  </tbody>
+</table>

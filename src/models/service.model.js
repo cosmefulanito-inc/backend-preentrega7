@@ -1,6 +1,9 @@
 import mongoose from "mongoose"
 
 const serviceSchema = new mongoose.Schema({
+
+    // el id desaparece porque ahora lo asigna mongo
+    
     name: {
         type: String,
         required: true
